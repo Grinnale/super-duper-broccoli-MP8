@@ -1,0 +1,6 @@
+Alexander Maret 17 April 2024 
+Acknowledgements: Lucas - Worked with me on the Doubly-linked lists lab that was the foundation for this mini project Sam - Provided advice for fail fast in class CSC 207 Website - provided insructions for MP8 David - Reminded me to make a method for the iterator methods to fail fast (as stated in the E category)
+
+This mini-project creates a doubly-linked, circly-linked list with a dummy node. It also includes a fail fast mechanism to terminate list iterators that are out-of-sync with the most current change made to the list.
+
+The dummy node simplified the code because I never needed to check if node.prev was null and I never needed to change list.front. The circular linked made me never need to check if node.next was null, and I never needed to make prev or next null. Together, they eliminated many special cases in ListIterator's add and remove methods as well as Node2's insertBefore, insertAfter, and remove methods. This meant a lot fewer if statements, simplifying the code.
